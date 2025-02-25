@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="add-products.css">
+</head>
+<body>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Gurleen's Products</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    </header>
+    
+    <main class="container mt-4">
+        <h2 class="mb-4">Add New Product</h2>
+        <form id="add-product-form">
+            <div class="mb-3">
+                <label for="product-title" class="form-label">Product Title</label>
+                <input type="text" class="form-control" id="product-title" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="product-description" class="form-label">Description</label>
+                <textarea class="form-control" id="product-description" rows="3" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="product-price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="product-price" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="product-image" class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="product-image" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+    </main>
+
+    <script src="add-products.js"></script>
+</body>
+</html>
