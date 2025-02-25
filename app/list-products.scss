@@ -1,0 +1,60 @@
+// General Body Styles
+body {
+    background-color: #f8f9fa; // A light grey background
+  }
+  
+  // Container Customization
+  .container {
+    max-width: 1200px; // Limit the container width for larger screens
+  }
+  
+  // Buttons Styling
+  .btn-primary {
+    background-color: #007bff; // A rich blue for primary buttons
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; // A muted secondary button color
+    &:hover {
+      background-color: #545b62;
+    }
+  }
+  
+  // Card Styling
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for cards
+    transition: transform 0.3s ease-in-out; // Smooth transform effect on hover
+  
+    &:hover {
+      transform: translateY(-5px); // Lift card on hover
+    }
+  
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-title {
+      color: #333; // Darker text for titles for better readability
+    }
+  
+    .card-text {
+      color: #666; // Lighter text color for descriptions
+    }
+  }
+  
+  // Collapse Styles
+  .collapse .card {
+    margin-bottom: 1rem; // Space between cards when expanded
+  }
+  
+  // Custom responsiveness and padding
+  @media (max-width: 768px) {
+    .btn {
+      margin-bottom: 10px; // More margin on smaller screens
+    }
+  }
+  
